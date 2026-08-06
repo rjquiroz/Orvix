@@ -1,0 +1,6 @@
+@Orvix.Api_HostAddress = http://localhost:5036
+
+GET {{Orvix.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
