@@ -18,6 +18,13 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.MapGet("/api/health", () => Results.Ok(new
+{
+    application = "Orvix",
+    status = "Healthy",
+    version = "0.1.0"
+}));
+
 app.MapControllers();
 
 app.Run();
